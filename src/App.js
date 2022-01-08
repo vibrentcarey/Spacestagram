@@ -1,7 +1,7 @@
 import './App.css';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import Image from './components/Image';
+import Image from './components/Image/Image';
 import { v4 as uuid } from 'uuid';
 
 function App() {

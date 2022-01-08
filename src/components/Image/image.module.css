@@ -26,6 +26,7 @@
 
 .like {
   height: 20px;
+  animation: shake 0.3s ease-in-out;
 }
 
 .like:hover {
@@ -36,8 +37,40 @@
 .liked {
   color: #96bf46;
   height: 20px;
+  animation: throb 0.5s ease-in-out;
 }
 
 .liked:hover {
   cursor: pointer;
+}
+
+/* Animations */
+@keyframes shake {
+  0% {
+    transform: translate(2px, 0);
+  }
+  20%{
+    transform: translate(-2px, 0);
+  }
+  40% {
+    transform: translate(2px, 0);
+  }
+  80%{
+    transform: translate(-2px, 0);
+  }
+}
+
+@keyframes throb {
+  0% {
+    transform:scale(1.1);
+  }
+  20%{
+    transform:scale(1);
+  }
+  40% {
+    transform:scale(1.1);
+  }
+  80%{
+    transform:scale(1);
+  }
 }
