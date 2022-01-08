@@ -1,11 +1,43 @@
 .card {
   width: 100%;
   max-width: 200px;
-  background-color: #014C3E;
-  border-radius: 5px;
+  background-color: #014c3e;
+  border-radius: 4px;
+  color: #fff;
+  padding: 0.6rem;
+  margin: 1rem;
+  box-shadow: #014c3e 0px 5px 10px 0px;
 }
 
-.image{
-  border-radius: 5px;
-  width: 90%;
+.title {
+  margin-top: 0;
+}
+
+.image {
+  border-radius: 4px;
+  width: 100%;
+  height: 100px;
+}
+
+.content {
+  font-size: 0.8rem;
+  margin: 0.4rem 0;
+}
+
+.like {
+  height: 20px;
+}
+
+.like:hover {
+  cursor: pointer;
+  color: #96bf46;
+}
+
+.liked {
+  color: #96bf46;
+  height: 20px;
+}
+
+.liked:hover {
+  cursor: pointer;
 }
