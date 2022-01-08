@@ -1,10 +1,11 @@
 import './App.css';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import Image from './components/Image';
+import { v4 as uuid } from 'uuid';
 
 function App() {
   const API_KEY = process.env.REACT_APP_API_KEY
-  console.log(process.env);
   const [images, setImages] = useState([])
   useEffect(() => {
     axios.get(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&count=10`)
@@ -17,7 +18,9 @@ function App() {
   }, [])
   return (
     <div className="App">
-      {images.length > 0 && <h1>{images[0].title}</h1>}
+      {images.length > 0 && images.map(image => {
+        return <Image key={uuid()} title={image.title} date={image.date} url={image.url} />
+      })}
     </div>
   );
 }
