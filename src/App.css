@@ -1,9 +1,10 @@
-body {
-  background-color: #faf7ed;
+html, body, #root .App {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .App {
-  height: 100%;
   background-color: #faf7ed;
   display: flex;
   flex-wrap: wrap;

@@ -6,6 +6,7 @@ import { HeartIcon } from '@heroicons/react/outline'
 const Image = ({ title, url, date }) => {
   const [liked, setLiked] = useState(false);
   const [show, setShow] = useState(false);
+
   // Hide like button until first animation runs
   useEffect(() => {
     setTimeout(() => {
