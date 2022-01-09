@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 // Component Imports
 import Image from './components/Image/Image';
 import Header from './components/Header/Header';
-import Error from './components/Error/Error';
+import Loading from './components/Loading/Loading';
 // Package Imports
 import axios from 'axios';
 import { v4 as uuid } from 'uuid';
@@ -31,7 +31,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {loading && <Error />}
+      {loading && <Loading />}
       {!loading && <ReactTypingEffect
         text={["Welcome To: The Final Frontier 🚀"]}
         className="typed"

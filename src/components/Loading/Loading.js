@@ -1,9 +1,9 @@
 import React from 'react';
-import classes from './Error.module.css'
+import classes from './Loading.module.css'
 // Package Imports
 import PacmanLoader from "react-spinners/PacmanLoader";
 
-const Error = () => {
+const Loading = () => {
   return (
     <div className={classes.error}>
       <h2 className={classes.header}>Gathering Your Intergalactic Images...</h2>
@@ -14,4 +14,4 @@ const Error = () => {
   );
 };
 
-export default Error;
+export default Loading;
