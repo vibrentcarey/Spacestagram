@@ -1,10 +1,14 @@
 import React from 'react';
+import classes from './Header.module.css'
+import { MoonIcon } from '@heroicons/react/outline'
+
 
 const Header = () => {
   return (
-    <div>
-      
-    </div>
+    <header className={classes.header}>
+      <MoonIcon className={classes.icon} />
+      <h1 className={classes.title}> Spacestagram</h1>
+    </header>
   );
 };
 

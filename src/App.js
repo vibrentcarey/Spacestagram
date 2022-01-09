@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Image from './components/Image/Image';
 import { v4 as uuid } from 'uuid';
+import Header from './components/Header/Header';
 
 function App() {
   const API_KEY = process.env.REACT_APP_API_KEY
@@ -18,6 +19,7 @@ function App() {
   }, [])
   return (
     <div className="App">
+      <Header />
       {images.length > 0 && images.map(image => {
         return <Image key={uuid()} title={image.title} date={image.date} url={image.url} />
       })}

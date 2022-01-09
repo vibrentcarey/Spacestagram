@@ -1,0 +1,17 @@
+.header {
+  width: 100%;
+  background-color: #014c3e;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.icon {
+  height: 20px;
+}
+
+.title {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}

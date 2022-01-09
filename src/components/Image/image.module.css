@@ -1,3 +1,4 @@
+/* Card Styles */ 
 .card {
   width: 100%;
   max-width: 200px;
@@ -24,20 +25,21 @@
   margin: 0.4rem 0;
 }
 
+/* Like Button Styles */ 
 .like {
   height: 20px;
   animation: shake 0.3s ease-in-out;
 }
 
 .like:hover {
-  cursor: pointer;
   color: #96bf46;
+  cursor: pointer;
 }
 
 .liked {
+  animation: throb 0.5s ease-in-out;
   color: #96bf46;
   height: 20px;
-  animation: throb 0.5s ease-in-out;
 }
 
 .liked:hover {

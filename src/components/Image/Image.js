@@ -1,21 +1,28 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import classes from './image.module.css'
 import { HeartIcon } from '@heroicons/react/outline'
 
 const Image = ({ title, url, date }) => {
-  const [liked, setLiked] = useState(false)
-  
+  const [liked, setLiked] = useState(false);
+  const [show, setShow] = useState(false);
+  // Hide like button until first animation runs
+  useEffect(() => {
+    setTimeout(() => {
+      setShow(true)
+    }, 500)
+  }, [])
+
   const handleLike = () => {
     setLiked(!liked);
   }
   return (
     <article className={classes.card}>
-      <h2 className={classes.title}>Spacestagram </h2>
+      <h2 className={classes.title}> Spacestagram </h2>
       <img className={classes.image} src={url} alt='Space Image' />
       <p className={classes.content}>{title}</p>
       <p className={classes.content}>{date}</p>
-      <HeartIcon className={liked ? classes.liked : classes.like} onClick={handleLike} />
+      <HeartIcon className={liked ? classes.liked : classes.like} onClick={handleLike} style={{ visibility: show ? 'visible' : 'hidden' }} />
     </article>
   );
 };
