@@ -64,13 +64,13 @@
 
 @keyframes throb {
   0% {
-    transform:scale(1.1);
+    transform:scale(1.2);
   }
   20%{
     transform:scale(1);
   }
   40% {
-    transform:scale(1.1);
+    transform:scale(1.2);
   }
   80%{
     transform:scale(1);
