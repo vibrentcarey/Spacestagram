@@ -22,7 +22,7 @@ const Image = ({ title, url, date }) => {
     <article className={classes.card}>
       <h2 className={classes.title}> Spacestagram </h2>
       <img className={classes.image} src={url} alt='Space Image' />
-      <p className={classes.content}>{title}</p>
+      <p className={classes.name}>{title}</p>
       <p className={classes.content}>{date}</p>
       <HeartIcon className={liked ? classes.liked : classes.like} onClick={handleLike} style={{ visibility: show ? 'visible' : 'hidden' }} />
     </article>

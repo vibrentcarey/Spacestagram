@@ -4,8 +4,8 @@
   border-radius: 4px;
   box-shadow: #014c3e 0px 5px 10px 0px;
   color: #fff;
-  margin: 1rem;
-  min-height: 350px;
+  margin: 1.2rem;
+  height: 350px;
   max-width: 300px;
   padding: 0.6rem;
   width: 100%;
@@ -17,19 +17,25 @@
 
 .image {
   border-radius: 4px;
-  height: 100px;
+  height: 50%;
   width: 100%;
 }
 
 .content {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin: 0.4rem 0;
+}
+
+.name{
+  margin: 0.4rem 0;
+  min-height: 45px;
+  font-weight: bold;
 }
 
 /* Like Button Styles */ 
 .like {
   animation: shake 0.3s ease-in-out;
-  height: 20px;
+  height: 30px;
 }
 
 .like:hover {
@@ -40,7 +46,7 @@
 .liked {
   animation: throb 0.8s ease-in-out;
   color: #a4c85f;
-  height: 20px;
+  height: 30px;
 }
 
 .liked:hover {

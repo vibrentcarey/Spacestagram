@@ -4,6 +4,7 @@ body,
   height: 100%;
   width: 100%;
   min-height: 100vh;
+  min-width: 100vw;
 }
 
 .App {
@@ -17,7 +18,7 @@ body,
 .typed {
   width: 100%;
   color: #014c3e;
-  margin: 1rem;
+  margin: 2rem;
   font-weight: bold;
   font-size: 1.6rem;
 }
