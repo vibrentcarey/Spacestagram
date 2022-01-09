@@ -3,7 +3,7 @@
   background-color: #014c3e;
   color: #fff;
   display: flex;
-  height: 10%;
+  height: 15%;
   padding: 0 1rem;
   width: 100%;
 }
@@ -13,6 +13,6 @@
 }
 
 .title {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   margin: 1rem 0;
 }
