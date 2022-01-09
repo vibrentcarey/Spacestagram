@@ -26,19 +26,20 @@ function App() {
         setLoading(false)
         setImages(imagesInfo);
       })
+      .catch(err => console.log(err));
   }, [])
   return (
     <div className="App">
       <Header />
       {loading && <Error />}
-      {!loading &&    <ReactTypingEffect
-        text={["Spacestagram, The Final Frontier 🚀"]}
+      {!loading && <ReactTypingEffect
+        text={["Welcome To: The Final Frontier 🚀"]}
         className="typed"
         speed={50}
-        eraseDelay={1000000}
+        eraseDelay={100000}
       />
-    }
-    <br/>
+      }
+      <br />
       {images.length > 0 && images.map(image => {
         return <Image key={uuid()} title={image.title} date={image.date} url={image.url} />
       })}
