@@ -1,6 +1,7 @@
 import React from 'react';
-import PacmanLoader from "react-spinners/PacmanLoader";
 import classes from './Error.module.css'
+// Package Imports
+import PacmanLoader from "react-spinners/PacmanLoader";
 
 const Error = () => {
   return (

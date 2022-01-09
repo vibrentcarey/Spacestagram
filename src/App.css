@@ -1,4 +1,6 @@
-html, body, #root .App {
+html,
+body,
+#root .App {
   height: 100%;
   width: 100%;
   min-height: 100vh;
@@ -9,4 +11,11 @@ html, body, #root .App {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.typed {
+  width: 100%;
+  color: #014c3e;
+  margin: 1rem;
+  font-weight: bold;
 }

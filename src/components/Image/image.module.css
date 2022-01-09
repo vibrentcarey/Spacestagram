@@ -37,7 +37,7 @@
 }
 
 .liked {
-  animation: throb 0.5s ease-in-out;
+  animation: throb 0.8s ease-in-out;
   color: #a4c85f;
   height: 20px;
 }

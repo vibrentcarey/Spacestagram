@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
 import classes from './image.module.css'
+// Package Imports
+import PropTypes from 'prop-types';
 import { HeartIcon } from '@heroicons/react/outline'
 
 const Image = ({ title, url, date }) => {
