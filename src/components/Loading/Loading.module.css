@@ -7,11 +7,23 @@
 }
 
 .header {
-  font-size: 1.4rem;
+  font-size: 1rem;
   margin-bottom: 0.4rem;
 }
 
 .message {
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin: 0.4rem;
+}
+
+@media (min-width:600px) {
+  .header {
+    font-size: 1.4rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .message {
+    font-size: 1rem;
+    margin: 0.4rem;
+  }
 }
